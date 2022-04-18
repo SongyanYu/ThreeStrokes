@@ -53,6 +53,7 @@ backward <- function(x) {
     backward.point <- as.numeric(substr(x, 2, 2)) - 1
     backward.step <- paste0(substr(x, 1, 1), backward.point)
   }
+  return(backward.step)
 }
 
 leap <- function(x){
